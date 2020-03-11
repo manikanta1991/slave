@@ -1,6 +1,6 @@
 FROM ubuntu:16.04 as build
 RUN apt-get update -y && apt-get install git -y && apt-get install maven -y
-RUN git clone https://github.com/spring-projects/spring-petclinic.git
+#RUN git clone https://github.com/spring-projects/spring-petclinic.git
 WORKDIR /spring-petclinic
 RUN mvn package
 
